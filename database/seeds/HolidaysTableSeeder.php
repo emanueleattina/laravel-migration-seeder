@@ -28,7 +28,7 @@ class HolidaysTableSeeder extends Seeder
             $holiday->days = $faker->numberBetween(2, 15);
             $holiday->name_hotel = $faker->company();
             $holiday->name_operator = $faker->name();
-            $holiday->price = $faker->randomFloat(2);
+            $holiday->price = $faker->randomFloat(2, 300, 900);
             $holiday->people = $faker->numberBetween(1, 10);
             $holiday->save();
         }

@@ -19,7 +19,7 @@ class CreateHolidaysTable extends Migration
             $table->tinyInteger('days');
             $table->string('name_hotel');
             $table->string('name_operator');
-            $table->smallInteger('price');
+            $table->float('price');
             $table->tinyInteger('people');
             $table->timestamps();
         });
