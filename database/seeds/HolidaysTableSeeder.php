@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Fake\Generator as Faker;
+use Faker\Generator as Faker;
 use App\Holiday;
 
 class HolidaysTableSeeder extends Seeder
@@ -30,7 +30,7 @@ class HolidaysTableSeeder extends Seeder
             $holiday->name_operator = $faker->name();
             $holiday->price = $faker->randomFloat(2);
             $holiday->people = $faker->numberBetween(1, 10);
+            $holiday->save();
         }
-        $holiday->save();
     }
 }
